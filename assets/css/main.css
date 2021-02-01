@@ -30,7 +30,6 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-
 	}
 
 article, aside, details, figcaption, figure,
@@ -2670,7 +2669,7 @@ input, select, textarea {
 		}
 
 			.features li:nth-child(1) {
-				background-image: url("../../images/gameengine.gif");
+				background-image: url("../../images/Atlist.gif");
 				
 				
 			}
