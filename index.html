@@ -245,14 +245,21 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script>
-		$(window).load(function() {
-			window.setTimeout('fadeout();', 2000);
-		});
 
+	<script>
+		
+		window.onload = function(){ document.getElementById("#loading").style.display = "none" }
+
+
+
+		$(document).ready(function(){   
+			window.setTimeout('fadeout();', 0);
+			document.body.style.overflow = 'visible';
+		});
+	
 		function fadeout(){
 			$('#loading').fadeOut('slow', function() {
-			  
+			   // Animation complete.
 			});
 		}
 	
