@@ -226,7 +226,7 @@
 		<footer id="footer">
 			<ul class="icons">
 				<a target="_blank" href="https://github.com/jho71"><img class="grey_logo"
-						src="images/github.png" alt="GitHub"></img></a>
+						src="images/gitHub.png" alt="GitHub"></img></a>
 				<a target="_blank" href="https://www.linkedin.com/in/john-ho-4a1599180/"><img class="grey_logo"
 						src="images/linkedin.png"
 						alt="LinkedIn"></img></a> </ul>
@@ -248,14 +248,15 @@
 
 	<script>
 		
-		window.onload = function(){ document.getElementById("#loading").style.display = "none" }
+		
 
 
 
-		$(document).ready(function(){   
+		window.onload = function(){ 
+			$(this).scrollTop(0);
 			window.setTimeout('fadeout();', 0);
 			document.body.style.overflow = 'visible';
-		});
+		};
 	
 		function fadeout(){
 			$('#loading').fadeOut('slow', function() {
