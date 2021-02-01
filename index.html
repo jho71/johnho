@@ -247,22 +247,12 @@
 	<script src="assets/js/main.js"></script>
 	<script>
 		$(window).load(function() {
-		  $('#loading').hide();
+			window.setTimeout('fadeout();', 2000);
 		});
-	  </script>
-	  
-	<script>
 
-
-
-		$(document).ready(function(){   
-			window.setTimeout('fadeout();', 0);
-			document.body.style.overflow = 'visible';
-		});
-	
 		function fadeout(){
 			$('#loading').fadeOut('slow', function() {
-			   // Animation complete.
+			  
 			});
 		}
 	
