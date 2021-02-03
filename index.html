@@ -11,9 +11,7 @@
 </head>
 
 <body class="landing is-preload">
-	<div id="loading">
-		<img loading="lazy"  id="loading-image" src="images/loading.gif" alt="Loading..." />
-		</div>
+	
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
@@ -290,17 +288,7 @@
 			$(this).scrollTop(0);
 		});
 
-		window.onload = function(){ 
-			
-			window.setTimeout('fadeout();', 0);
-			document.body.style.overflow = 'visible';
-		};
-	
-		function fadeout(){
-			$('#loading').fadeOut('slow', function() {
-			   // Animation complete.
-			});
-		}
+
 	
 		</script>
 </body>
