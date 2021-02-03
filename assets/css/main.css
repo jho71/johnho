@@ -2735,20 +2735,20 @@ letter-spacing: 4px !important;
 		}
 
 			.features li:nth-child(1) {
-				background-image: url("../../images/bubblesort.gif");
+				background-image: url("../../images/interestImg/bubblesort.gif");
 				
 				
 			}
 			.features li:nth-child(2) {
-				background-image: url("../../images/golfModel.gif");
+				background-image: url("../../images/interestImg/golfModel.gif");
 			}
 
 			.features li:nth-child(3) {
-				background-image: url("../../images/robo.gif");
+				background-image: url("../../images/interestImg/robo.gif");
 			}
 
 			.features li:nth-child(4) {
-				background-image: url("../../images/unrealDemo.gif");
+				background-image: url("../../images/interestImg/unrealDemo.gif");
 			}
 
 			.features li:nth-child(5) {
