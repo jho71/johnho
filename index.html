@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>John Ho</title>
+	<title>John Ho - Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,6 +29,7 @@
 								<li><a class="more scrolly" href="#banner">Home</a></li>
 								<li><a class="more scrolly" href="#one">About Me</a></li>
 								<li><a class="more scrolly" href="#two">Projects</a></li>
+								<li><a class="more scrolly" href="#three">Interests</a></li>
 								<li><a class="more scrolly" href="#resume">Resume</a></li>
 								<li><a class="more scrolly" href="#contact">Contact</a></li>
 							</ul>
@@ -45,7 +46,7 @@
 				<br />
 				<h2>Software Developer</h2>
 				<br />
-				Turning ideas into a reality
+				Turning ideas into reality
 				<ul class="actions special">
 
 				</ul>
@@ -58,35 +59,54 @@
 			<div class="inner">
 				<header class="major">
 					<h2>About Me</h2>
-					<p>I am a student at Seneca College studying BSD (Bachelor of Software Development).
-						<br>
-						It was the day I had bought my first phone when I came to the realization of how heavily
-						integrated
+					<p>I am a candidate for the Bachelor of Technology in Software Development at Seneca College.
+						<br><br>
+						The day I bought my first phone, I came to the realization of how heavily integrated
 						software was in our daily lives; it controls our daily essentials: online banking,
-						communication and most importantly to my sixteen-year-old self, video games. In high school I
+						communication, and most importantly to my sixteen-year-old self, video games. In high school, I
 						took multiple programming courses, which inspired me to make my own programs.
 						After graduating, I knew I wanted to pursue a career in software development, which leads me to
 						where I am today,
-						as a skilled, hardworking and dedicated software developer. </p>
+						as a skilled, hardworking, and dedicated software developer. </p>
 				</header>
+				<button id = "skillBtn" onclick="showSkills('skillsDIV')">See Skills</button>
 
-				<h2 class="skillsHeader">Skills</h2>
-				<div class="skillsIcons">
-					<img src="images/cpp_logo.png" alt="C++"></img>
-					<img src="images/java-icon.png"
-						alt="Java"></img>
-					<img src="images/Reactjs.png"
-						alt="React"></img>
-					<img src="images/angular.svg"
-						alt="Angular"></img>
-					<img src="images/git.png"
-						alt="Git"></img>
 				
-					<img src="images/touchicon-180.png"
-						alt="Firebase"></img>
-					<img src="images/node-js.png" alt="NodeJS"></img>
+				<div id = "skillsDIV" >
+				<br> 
+				<h2 class="skillsHeader">Languages</h2>
+				<div class="skillsIcons">
+
+					<img src="images/skillsImg/cpp_logo.png" alt="C++" id="cpp"></img>
+					<img src="images/skillsImg/cSharp.png" alt="Csharp" id="cSharp"></img>
+					<img src="images/skillsImg/c.png" alt="C" id="c"></img>
+					<img src="images/skillsImg/java-icon.png"	alt="Java" id="java"></img>
+					<img src="images/skillsImg/python.png" alt="python"id="python"></img>
 				</div>
+				<h2 class="skillsHeader">Web Development</h2>
+				<div class="skillsIcons">
+					
+					<img src="images/skillsImg/ts.png"alt="ts" id="ts"></img>
+					<img src="images/skillsImg/Reactjs.png"alt="React" id="react"></img>
+					<img src="images/skillsImg/angular.svg"alt="Angular" id="angular"></img>
+					<img src="images/skillsImg/js.png" alt="JS" id="js"></img>
+					<img src="images/skillsImg/html.png" alt="HTML" id="html"></img>	
+					<img src="images/skillsImg/css.png" alt="CSS" id="css"></img>
+				
+				</div>
+				<h2 class="skillsHeader">Technologies</h2>
+					<div class="skillsIcons">
+
+						<img src="images/skillsImg/git.png"alt="Git" id="git"></img>	
+						<img src="images/skillsImg/touchicon-180.png"alt="Firebase" id="firebase"></img>	
+						<img src="images/skillsImg/node-js.png" alt="NodeJS" id="nodejs"></img>
+						<img src="images/skillsImg/mongo.png" alt="MongoDB" id="mongodb"></img>
+						<img src="images/skillsImg//mySQL.png" alt="mySQL" id="mysql"></img>
+						<img src="images/skillsImg/npm.png" alt="npm" id="npm"></img>
+						<img src="images/gitHub.png" alt="git" id="git"></img>
+					</div>
 			</div>
+		</div>
 		</section>
 
 		<!-- Two -->
@@ -97,8 +117,7 @@
 					<p class= "heroku-warning">*Please be patient when loading demos, these web apps are hosted via Heroku</p>
 					<h2>DictionAny<br /></h2>
 					<h1>Angular.js | MongoDB | AWS</h1>
-					<p>Not sure what the term "bugs" refers to? (Hint: they're worst than creepy crawlies). With the
-						Software wikipage, you can find, contribute, and rate definitions of software-related terms. You
+					<p>Not sure what the term "bugs" refers to? (Hint: they're worse than creepy crawlies). With DictionAny, you can find, contribute, and rate definitions of software-related terms. You
 						are also welcome to contribute translations of terms for non-English speakers.</p>
 					<a href="https://soft-dictionary.herokuapp.com" class="button fit primary">Demo</a><a href="#" class="button fit ">Repo</a>
 
@@ -110,20 +129,26 @@
 					<h2>Atlist<br /></h2>
 					<h1>React.js | Firebase | ContextAPI</h1>
 					<p>Have you ever wanted a single location to look for multiple forms of media? Well how about the
-						ability to add it to a watch later list? Or maybe show your friends the media you have consumed
-						lately? Introducing Atlist, the one-stop shop for viewing, sharing, and rating movies, shows and
+						ability to add it to a watch later list? Or maybe show your friends the media you have enjoyed
+						lately? Introducing Atlist, the one-stop shop for viewing, sharing, and rating movies, shows, and
 						even books!</p>
 					<a href="https://atlist.herokuapp.com" class="button fit primary">Demo</a><a href="https://github.com/jho71/Atlsit" class="button fit ">Repo</a>
 
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+				<div class="image"><img class="static"src="images/gameEngineStatic.PNG" alt="" /><img class="active"src="images/tankEngine.gif" alt="" /></div>
 				<div class="content">
-					<h2>WORKING</h2><br /></h2>
-					<h1>? | ? | ?</h1>
-					<p>It's a suprize!</p>
-					<a href="#" class="button fit primary">Demo</a><a href="#" class="button fit ">Repo</a>
+					<br>
+					<h2>Game Engine</h2>
+					<h1>C++ | OOP | OpenGL</h1>
+					<p> Leveraging my knowledge of Object-Oriented Programming, I applied my skills to a unique project that 
+						allowed me to have fun and be creative. 
+						I developed a 3D game engine with a framework for creating multi-object actors, full collision detection 
+						algorithms, artificial intelligence enemy tracking, and dynamic projectile spawning/deletion. Oh yeah, 
+						and the code is written so you can spawn in any actor/s you like!
+					</p>
+					<a href="https://github.com/jho71/Game-Engine" class="button fit ">Repo</a>
 
 				</div>
 			</section>
@@ -137,10 +162,10 @@
 				</header>
 				<ul class="features">
 					<li class="icon solid fa-code">
-						<h3 class = "condenseTitle">Game Engine Creation</h3>
+						<h3 class = "doaHead">Data Structs/Algorithms</h3>
 						<div class="image__overlay image__overlay--primary">
 							<p class="image__description">
-								Learning how to develop a game engine from scratch has given me a thourough understanding of how professional game engines work under the hood.
+								I am actively studying Data Structures and Algorithms (DOA) as I enjoy solving challanging problems that can be solved quickly and efficently with the use of DOA's.
 
 							</p>
 						</div>
@@ -157,11 +182,11 @@
 									
 					</li>
 					<li class="icon fa-paper-plane">
-						<h3>Robotic Programming</h3>
+						<h3 class ="roboHead">Robotic Programming</h3>
 						
 						<div class="image__overlay image__overlay--primary">
 							<p class="image__description">
-								Using robotic technology such as sonar and line/object detection I was able to automate a vehicle to follow a line to a destination, then sense an object, pick it up and return with it. 
+								Using robotic technology, such as sonar and line/object detection, I automated a vehicle to follow a line to a destination, then sense an object, pick it up, and return with it. 
 							</p>
 						</div>
 					</li>
@@ -170,7 +195,7 @@
 						
 						<div class="image__overlay image__overlay--primary">
 							<p class="image__description">
-								I enjoy combining programmming skills, artist ability and creativity into interactive 3D first-person and third person games developed in Unreal Engine 4.
+								I enjoy combining programmming skills, artistic ability, and creativity into interactive 3D first-person and third-person games developed in Unreal Engine 4.
 							</p>
 						</div>
 					</li>
@@ -247,13 +272,26 @@
 	<script src="assets/js/main.js"></script>
 
 	<script>
-		
+	function showSkills(id) {
+        var e = document.getElementById(id);
+        if (e.style.display !== 'block'){
+			e.setAttribute('style', 'display : block !important');
+			$('#skillBtn').text('Close Skills');}
+        else{
+            e.style.display = 'none';
+			$('#skillBtn').text('See Skills');
+		}
+    }
+
 		
 
-
+		$(document).ready(function(){
+			
+			$(this).scrollTop(0);
+		});
 
 		window.onload = function(){ 
-			$(this).scrollTop(0);
+			
 			window.setTimeout('fadeout();', 0);
 			document.body.style.overflow = 'visible';
 		};
