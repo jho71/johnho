@@ -105,7 +105,7 @@
 						<img src="images/skillsImg/mongo.png" alt="MongoDB" id="mongodb"></img>
 						<img src="images/skillsImg//mySQL.png" alt="mySQL" id="mysql"></img>
 						<img src="images/skillsImg/npm.png" alt="npm" id="npm"></img>
-						<img src="images/gitHub.png" alt="git" id="git"></img>
+						<img src="images/skillsImg/gitHub.png" alt="git" id="git"></img>
 					</div>
 				</div>
 			</div>
@@ -124,8 +124,8 @@
 					<p>Not sure what the term "bugs" refers to? (Hint: they're worse than creepy crawlies). With
 						DictionAny, you can find, contribute, and rate definitions of software-related terms. You
 						are also welcome to contribute translations of terms for non-English speakers.</p>
-					<a href="https://soft-dictionary.herokuapp.com" class="button fit primary">Demo</a><a href="#"
-						class="button fit ">Repo</a>
+					<a target="_blank" href="https://soft-dictionary.herokuapp.com" class="button fit primary">Demo</a><a href="https://github.com/jho71/DictionAny"
+					target="_blank"class="button fit ">Repo</a>
 
 				</div>
 			</section>
@@ -140,8 +140,8 @@
 						lately? Introducing Atlist, the one-stop shop for viewing, sharing, and rating movies, shows,
 						and
 						even books!</p>
-					<a href="https://atlist.herokuapp.com" class="button fit primary">Demo</a><a
-						href="https://github.com/jho71/Atlsit" class="button fit ">Repo</a>
+					<a target="_blank" href="https://atlist.herokuapp.com" class="button fit primary">Demo</a><a
+					target="_blank" href="https://github.com/jho71/Atlist" class="button fit ">Repo</a>
 
 				</div>
 			</section>
@@ -161,7 +161,7 @@
 						yeah,
 						and the code is written so you can spawn in any actor/s you like!
 					</p>
-					<a href="https://github.com/jho71/Game-Engine" class="button fit ">Repo</a>
+					<a target="_blank" href="https://github.com/jho71/Game-Engine" class="button fit ">Repo</a>
 
 				</div>
 			</section>
@@ -245,7 +245,7 @@
 				<header>
 					<h2>Here's more info</h2>
 					<a target="_blank"
-						href="https://drive.google.com/file/d/1ZyNjpb4ZewO1Q_kv3pyKIPVNqINSZVZn/view?usp=sharing"><button>View
+						href="https://drive.google.com/file/d/1obXesEbErspu2iAg2muMiUAoKQ0270-y/view?usp=sharing"><button>View
 							resume</button></a>
 
 				</header>
@@ -302,22 +302,17 @@
 			}
 		}
 
-
-
-		$(document).ready(function () {
-			$(this).scrollTop(0);
-		});
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
 
 		window.onload = function () {
 
-			window.setTimeout('fadeout();', 0);
+			$('#loading').fadeOut('slow');
 			document.body.style.overflow = 'visible';
+		
 		};
 
-		function fadeout() {
-			$('#loading').fadeOut('slow', function () {
-			});
-		}
 
 	</script>
 </body>
