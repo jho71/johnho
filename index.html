@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 
 <head>
 	<title>John Ho - Portfolio</title>
-	<meta name="description" content="Feel free to visit my portfolio site to learn more about me and see my lastest work!">
+	<meta name="description"
+		content="Feel free to visit my portfolio site to learn more about me and see my lastest work!">
 	<meta charset="utf-8" property="og:image" content="images/coderGif.gif" />
 	<meta name="author" content="John Ho">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="#">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -20,9 +22,9 @@
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
-		<!-- Header -->
+		<!-- Header-->
 		<header id="header" class="alt">
-			<h1><a href="index.html">John Ho</a></h1>
+			<h1><a href="index.html"> &lt;John Ho/></a></h1>
 			<nav id="nav">
 				<ul>
 					<li class="special">
@@ -73,42 +75,138 @@
 						as a skilled, hardworking, and dedicated software developer.
 					</p>
 				</header>
-				<button id="skillBtn" onclick="showSkills('skillsDIV')">See Skills</button>
+				<button class="collapsible" id="skillBtn">See Skills</button>
 
 
-				<div id="skillsDIV">
+				<div id="skillsDIV" class="skillsContent">
 					<br>
 					<h2 class="skillsHeader">Languages</h2>
+
+					<div class="skillsIcons">
+						<div class="tooltip">
+							<img src="images/skillsImg/js.png" alt="JS" id="js"></img>
+							<span class="tooltiptext">Javascript</span>
+						</div>
+
+
+						<div class="tooltip">
+							<img src="images/skillsImg/ts.png" alt="typescript" id="ts"></img>
+							<span class="tooltiptext">Typescript</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/cpp_logo.png" alt="C++" id="cpp"></img>
+							<span class="tooltiptext">C++</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/cSharp.png" alt="Csharp" id="cSharp"></img>
+							<span class="tooltiptext">C#</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/c.png" alt="C" id="c"></img>
+							<span class="tooltiptext">C</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/java-icon.png" alt="Java" id="java"></img> <span
+								class="tooltiptext">Java</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/php.svg" alt="python" id="php"></img> <span
+								class="tooltiptext">PHP</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/python.png" alt="python" id="python"></img> <span
+								class="tooltiptext">Python</span>
+						</div>
+					</div>
+
+					<h2 class="skillsHeader">Front-End</h2>
+					<div class="skillsIcons">
+						<div class="tooltip">
+							<img src="images/skillsImg/angular.png" alt="angular" id="angular"></img> <span
+								class="tooltiptext">Angular</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/Reactjs.png" alt="React" id="react"></img> <span
+								class="tooltiptext">React</span>
+						</div>
+
+						<div class="tooltip">
+							<img src="images/skillsImg/html.png" alt="HTML" id="html"></img> <span
+								class="tooltiptext">HTML</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/css.png" alt="CSS" id="css"></img> <span
+								class="tooltiptext">CSS</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/bootstrap.svg" alt="bootstrap" id="bootstrap"></img> <span
+								class="tooltiptext">Bootstrap</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/jquery.png" alt="jquery" id="jquery"></img> <span
+								class="tooltiptext">jQuery</span>
+						</div>
+					</div>
+
+					<h2 class="skillsHeader">Back-End</h2>
 					<div class="skillsIcons">
 
-						<img src="images/skillsImg/cpp_logo.png" alt="C++" id="cpp"></img>
-						<img src="images/skillsImg/cSharp.png" alt="Csharp" id="cSharp"></img>
-						<img src="images/skillsImg/c.png" alt="C" id="c"></img>
-						<img src="images/skillsImg/java-icon.png" alt="Java" id="java"></img>
-						<img src="images/skillsImg/python.png" alt="python" id="python"></img>
+						<div class="tooltip">
+							<img src="images/skillsImg/api.png" alt="api" id="api"></img> <span
+								class="tooltiptext">RESTful API</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/node-js.png" alt="NodeJS" id="nodejs"></img> <span
+								class="tooltiptext">NodeJS</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/npm.png" alt="npm" id="npm"></img> <span class="tooltiptext">Node
+								Package Manager</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/redux.png" alt="npm" id="redux"></img> <span
+								class="tooltiptext">Redux</span>
+						</div>
 					</div>
-					<h2 class="skillsHeader">Web Development</h2>
+					<h2 class="skillsHeader">Database</h2>
 					<div class="skillsIcons">
 
-						<img src="images/skillsImg/ts.png" alt="ts" id="ts"></img>
-						<img src="images/skillsImg/Reactjs.png" alt="React" id="react"></img>
-						<img src="images/skillsImg/angular.svg" alt="Angular" id="angular"></img>
-						<img src="images/skillsImg/js.png" alt="JS" id="js"></img>
-						<img src="images/skillsImg/html.png" alt="HTML" id="html"></img>
-						<img src="images/skillsImg/css.png" alt="CSS" id="css"></img>
+						<div class="tooltip">
+							<img src="images/skillsImg/touchicon-180.png" alt="Firebase" id="firebase"></img> <span
+								class="tooltiptext">Firebase</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/mongo.png" alt="MongoDB" id="mongodb"></img> <span
+								class="tooltiptext">MongoDB</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg//mySQL.png" alt="mySQL" id="mysql"></img> <span
+								class="tooltiptext">MySQL</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg//oracle.png" alt="oracle" id="oracle"></img> <span
+								class="tooltiptext">Oracle</span>
+						</div>
 
 					</div>
-					<h2 class="skillsHeader">Technologies</h2>
+					<h2 class="skillsHeader">Version control</h2>
 					<div class="skillsIcons">
-
-						<img src="images/skillsImg/git.png" alt="Git" id="git"></img>
-						<img src="images/skillsImg/touchicon-180.png" alt="Firebase" id="firebase"></img>
-						<img src="images/skillsImg/node-js.png" alt="NodeJS" id="nodejs"></img>
-						<img src="images/skillsImg/mongo.png" alt="MongoDB" id="mongodb"></img>
-						<img src="images/skillsImg//mySQL.png" alt="mySQL" id="mysql"></img>
-						<img src="images/skillsImg/npm.png" alt="npm" id="npm"></img>
-						<img src="images/skillsImg/gitHub.png" alt="git" id="git"></img>
+						<div class="tooltip">
+							<img src="images/skillsImg/git.png" alt="Git" id="git"></img> <span
+								class="tooltiptext">Git</span>
+						</div>
+						<div class="tooltip">
+							<img src="images/skillsImg/gitHub.png" alt="git" id="git"></img> <span
+								class="tooltiptext">Github</span>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
@@ -116,24 +214,28 @@
 		<!-- Two -->
 		<section id="two" class="wrapper alt style2">
 			<section class="spotlight">
-				<div class="image"><img class="static" src="images/logoImg/DictionAny.PNG" alt="" /><img class="active"
-						src="images/logoImg/DictionAny.gif" alt="" /></div>
+				<div class="image"><img loading="lazy" class="static" src="images/logoImg/DictionAny.PNG" alt="" /><img
+						class="active" loading="lazy" src="images/logoImg/DictionAny.gif" alt="" /></div>
 				<div class="content">
 					<p class="heroku-warning">*Please be patient when loading demos, these web apps are hosted via
 						Heroku</p>
 					<h2>DictionAny<br /></h2>
 					<h1>Angular.js | MongoDB | AWS</h1>
-					<p>Not sure what the term "bugs" refers to? (Hint: they're worse than creepy crawlies). With
-						DictionAny, you can find, contribute, and rate definitions of software-related terms. You
-						are also welcome to contribute translations of terms for non-English speakers.</p>
-					<a target="_blank" href="https://soft-dictionary.herokuapp.com" class="button fit primary">Demo</a><a href="https://github.com/jho71/DictionAny"
-					target="_blank"class="button fit ">Repo</a>
+					<p>Not sure what the software term "bugs" refers to? (Hint: they're worse than creepy crawlies).
+						With
+						DictionAny, you can find, contribute, and rate definitions of software-related terms. Supporting
+						over 100+ languages, DictionAny is really for anyone. Built with scalability
+						in mind, DictionAny is a non-developers (and normal developers) best friend for all things
+						software jargon.</p>
+					<a target="_blank" href="https://soft-dictionary.herokuapp.com"
+						class="button fit primary">Demo</a><a href="https://github.com/jho71/DictionAny" target="_blank"
+						class="button fit ">Repo</a>
 
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img class="static" src="images/logoImg/Atlist-static.PNG" alt="" /><img
-						class="active" src="images/logoImg/Atlist.gif" alt="" /></div>
+				<div class="image"><img class="static" loading="lazy" src="images/logoImg/Atlist-static.PNG"
+						alt="" /><img class="active" loading="lazy" src="images/logoImg/Atlist.gif" alt="" /></div>
 				<div class="content">
 					<h2>Atlist<br /></h2>
 					<h1>React.js | Firebase | ContextAPI</h1>
@@ -143,13 +245,13 @@
 						and
 						even books!</p>
 					<a target="_blank" href="https://atlist.herokuapp.com" class="button fit primary">Demo</a><a
-					target="_blank" href="https://github.com/jho71/Atlist" class="button fit ">Repo</a>
+						target="_blank" href="https://github.com/jho71/Atlist" class="button fit ">Repo</a>
 
 				</div>
 			</section>
 			<section class="spotlight">
-				<div class="image"><img class="static" src="images/logoImg/gameEngineStatic.PNG" alt="" /><img
-						class="active" src="images/logoImg/tankEngine.gif" alt="" /></div>
+				<div class="image"><img class="static" loading="lazy" src="images/logoImg/gameEngineStatic.PNG"
+						alt="" /><img class="active" loading="lazy" src="images/logoImg/tankEngine.gif" alt="" /></div>
 				<div class="content">
 					<br>
 					<h2>Game Engine</h2>
@@ -157,17 +259,48 @@
 					<p> Leveraging my knowledge of Object-Oriented Programming, I applied my skills to a unique project
 						that
 						allowed me to have fun and be creative.
-						I developed a 3D game engine with a framework for creating multi-object actors, full collision
+						I developed a 3D game engine featuring multi-object actors, full collision
 						detection
 						algorithms, artificial intelligence enemy tracking, and dynamic projectile spawning/deletion. Oh
 						yeah,
-						and the code is written so you can spawn in any actor/s you like!
+						and the code easily allows new actors to be added, that means unlimited skins!
 					</p>
 					<a target="_blank" href="https://github.com/jho71/Game-Engine" class="button fit ">Repo</a>
 
 				</div>
 			</section>
+			<section class="spotlight">
+				<div class="image"><img class="static" loading="lazy" src="images/logoImg/planetBStatic.PNG"
+						alt="" /><img class="active" loading="lazy" src="images/logoImg/planetBTrailer_cropped.gif" alt="" /></div>
+				<div class="content">
+					<br>
+					<h2>Planet B</h2>
+					<h1>C++ | Unreal Engine 4+ | Lots of googling</h1>
+					<p> Planet B is story driven sci-fi shooter fully developed by yours truley. You play as "Mother" an
+						android tasked with
+						transporting humanities last embroys to a new icey world. Upon landing you will discover humans
+						are not the only
+						life on Planet B.
+						<br/>
+						To achive the highest standard of gameplay I used blueprints and C++ to implement AI combat
+						actors <span id="dots">...</span> <span id="more">
+							,projectiles, health, inventory, ammunition, and save states. I even built complex state
+							machine logic for smooth and robust character animations.
+							All under four months (Not including dreams/nightmares about development).
+
+							Planet B placed 1st among 30+ competitors in my Game Development Fundamentals course.🥳
+						</span>
+					</p>
+					<div id="buttonExtendo">
+					<a  onclick="myFunction()" 
+					id="myBtn" class="button fit">Read more</a><a target="_blank" 
+					href="https://drive.google.com/file/d/1PPquZ6OhBVxULHMqD-dsFN3osHqWfjTW/view?usp=sharing" class="button fit primary">Gameplay Demo</a>
+					</div>
+				</div>
+			</section>
 		</section>
+
+		<!-- Three -->
 		<!-- Three -->
 		<section id="three" class="wrapper style3 special">
 			<div class="inner">
@@ -210,12 +343,12 @@
 						</div>
 					</li>
 					<li class="icon solid fa-headphones-alt">
-						<h3>Game Development</h3>
+						<h3>Hackathons</h3>
 
 						<div class="image__overlay image__overlay--primary">
 							<p class="image__description">
-								I enjoy combining programmming skills, artistic ability, and creativity into interactive
-								3D first-person and third-person games developed in Unreal Engine 4.
+								Having attended several Hackathons I have honed my execution and efficiency. Working with
+								multi-disciplinary teams I always learn new skills from other's strengths.
 							</p>
 						</div>
 					</li>
@@ -245,9 +378,14 @@
 		<section id="resume" class="wrapper style1">
 			<div>
 				<header>
-					<h2>Here's more info</h2>
+					<h2>Get to know me better via Resume</h2>
 					<a target="_blank"
-						href="https://drive.google.com/file/d/1obXesEbErspu2iAg2muMiUAoKQ0270-y/view?usp=sharing"><button>View
+						href="https://drive.google.com/file/d/1EQPfUKctOPmaZLd1nn6mwINBArwt_Sac/view?usp=sharing"><button>Software
+							Developer
+							resume</button></a>
+					<a target="_blank"
+						href="https://drive.google.com/file/d/1v5gCGVva7qPSjlBsPKibYqYW1GCmpPiB/view?usp=sharing"><button>Game
+							Developer
 							resume</button></a>
 
 				</header>
@@ -270,10 +408,16 @@
 		</section>
 		<footer id="footer">
 			<ul class="icons">
-				<a target="_blank" href="https://github.com/jho71"><img class="grey_logo"
+				<div class="tooltip"><a target="_blank" href="https://github.com/jho71"><img class="grey_logo" id="github" loading="lazy"
 						src="images/skillsImg/gitHub.png" alt="GitHub"></img></a>
-				<a target="_blank" href="https://www.linkedin.com/in/john-ho-4a1599180/"><img class="grey_logo"
-						src="images/skillsImg/linkedin.png" alt="LinkedIn"></img></a>
+					 <span
+						class="tooltiptext">Visit My Github</span>
+				</div>
+				<div class="tooltip"><a target="_blank" href="https://www.linkedin.com/in/john-ho-4a1599180/"><img  class="grey_logo"
+					loading="lazy" src="images/skillsImg/linkedin.png" alt="LinkedIn"></img></a>
+					 <span class="tooltiptext">Visit my Linkedin</span>
+				</div>
+				
 			</ul>
 			<ul class="copyright">
 
@@ -292,30 +436,55 @@
 	<script src="assets/js/main.js"></script>
 
 	<script>
-		function showSkills(id) {
-			var e = document.getElementById(id);
-			if (e.style.display !== 'block') {
-				e.setAttribute('style', 'display : block !important');
-				$('#skillBtn').text('Close Skills');
-			}
-			else {
-				e.style.display = 'none';
-				$('#skillBtn').text('See Skills');
-			}
+		var coll = document.getElementsByClassName("collapsible")
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+					document.getElementById("skillBtn").innerText = "See Skills"
+				} else {
+					document.getElementById("skillBtn").innerText = "Close Skills"
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
 		}
-
 		window.onbeforeunload = function () {
 			window.scrollTo(0, 0);
 		}
-
 		window.onload = function () {
 
+			$('#header').css({
+				'-moz-transition': 'opacity 2s ease',
+				'-webkit-transition': 'opacity 2s ease',
+				'-ms-transition': 'opacity 2s ease',
+				'transition': 'opacity 2s ease', 'opacity': '1'
+			});
 			$('#loading').fadeOut('slow');
-			document.body.style.overflow = 'visible';
-		
+			$('body').css({ 'overflow': 'auto', 'height': 'auto', 'position': 'relative' });
+
 		};
 
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+			var btnDiv = document.getElementById("buttonExtendo");
 
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				btnDiv.style.marginBottom = "0em"
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				btnDiv.style.marginBottom = "2em"
+				moreText.style.display = "inline";
+			}
+		}
 	</script>
 </body>
 

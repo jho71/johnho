@@ -13,6 +13,23 @@
 	margin-right:auto;
 
 } 
+.hidden {
+    height: 0px;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+}
+
+.hidden.open {
+     height: 200px;
+     -webkit-transition: height 0.5s linear;
+        -moz-transition: height 0.5s linear;
+         -ms-transition: height 0.5s linear;
+          -o-transition: height 0.5s linear;
+             transition: height 0.5s linear;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -35,40 +52,54 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
+	overflow: hidden;
+    height: 100%;
+    position: fixed;
+    width:100%;
 }
 
 ol, ul {
 	list-style: none;
 }
+
+#more {display: none;} 
+.readMore{
+	display: inline-block ;
+}
+  .skillsContent {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+
 div.skillsIcons img{
 	max-width : 4em;
 	margin-right: 0.5em;
 	margin-bottom: 1em;
 }
-#skillsDIV{
-	display: none;
-}
-#cSharp{
-max-width: 6em;
-margin-bottom: .2em;
-margin-left: -1em;
-margin-right: -.5em;
-}
-#cpp{
+/* #skillsDIV{
+	height: 0em;
+} */
+
+#cpp, #cSharp{
 	max-width : 3.3em;
 	margin-bottom: 1.5em;
+	margin-left: .5em;
 }
 #c{
-	max-width : 4em;
+	max-width : 4.2em;
 	margin-bottom: 1.2em;
+	margin-right: 0em;
+
 }
 #angular{
-	max-width: 4.3em;
-	margin-top: 1em;
+	max-width: 3em;
+	margin-right: .5em;
 }
 #js{
 	max-width: 6em;
@@ -83,31 +114,46 @@ margin-right: -1em;
 }
 #css{
 	max-width: 2.6em;
-	margin-bottom: 1.4em;
-	margin-right: 1em;
+	margin-right: 0em;
 }
 #python{
 	max-width: 3.3em;
-	margin-bottom: 1.4em;
+
 }
 #java{
 	margin-bottom: 1.2em;
 }
 #ts{
-	max-width: 3em;
-	margin-bottom: 1.5em;
+	max-width: 2.9em;
+	margin-bottom: 1.6em;
+	margin-right: .5em;
 }
 #react{
-	margin-bottom: 1.2em;
+	margin-bottom: 1.25em;
 	max-width: 3.5em;
 	margin-right: 0em;
 }
-#git{
+#git ,#redux{
 max-width: 3.5em;
-margin-bottom: 1.4em;
 }
-#npm{
+#jquery{
+	max-width: 6em;
+	margin-left: -.2em;
+	margin-bottom: .5em;
+}
+#bootstrap{
+	max-width: 2.8em;
+	margin-bottom: 1.6em;
+	margin-left : 1em
+}
+#firebase{
+	margin-bottom: 1.2em;
+}
+#npm, #php, #git, #python, #css, #redux, #angular{
 	margin-bottom: 1.4em;
+}
+#github{
+	max-width: 3em !important;
 }
 h2.skillsHeader{
 	border-bottom: solid 2px #fff;
@@ -162,6 +208,35 @@ input, select, textarea {
 	appearance: none;
 	margin-bottom: 1em;
 }
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(104, 104, 104, 0.411);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 120%;
+	left: 50%;
+	margin-left: -60px;
+	padding: 0em 3em, 0em 3em;
+	
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+	opacity: 0;
+	transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
 
 .image {
     position: relative;
@@ -646,7 +721,7 @@ letter-spacing: 4px !important;
 		}
 
 			.row > * {
-				padding: 0 0 0 1.5em;
+				padding: 0 0 0 0em;
 			}
 
 			.row.gtr-uniform {
@@ -2699,6 +2774,8 @@ letter-spacing: 4px !important;
 
 		}
 
+	
+		  
 /* Features */
 
 	.features {
@@ -2749,7 +2826,7 @@ letter-spacing: 4px !important;
 			}
 
 			.features li:nth-child(4) {
-				background-image: url("../../images/interestImg/unrealDemo.gif");
+				background-image: url("../../images/interestImg/hackathon.gif");
 			}
 
 			.features li:nth-child(5) {
@@ -2833,8 +2910,31 @@ letter-spacing: 4px !important;
 			}
 
 /* Spotlight */
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+  }
+  
+  .column img {
+	
+	height: 30em;
+	object-fit: cover;
+	max-width: 30em;
+	padding-left: 10px;
+	
+  }
+  
+  /* Clear floats after the columns */
+  .intRow:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 
-	.spotlight {
+
+	 .spotlight {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2863,15 +2963,16 @@ letter-spacing: 4px !important;
 			}
 			.static {
 				position:absolute;
-				background: white;
-				width: 50%; /* width of container */
+			
+				
 				height: 20em; /* height of container */
+				
 			  }
 			  
 			  .static:hover {
 				opacity:0;
 			  }
-
+		
 		.spotlight .content {
 			padding: 0em 4em 0.1em 4em ;
 			-moz-order: 2;
@@ -3655,7 +3756,9 @@ letter-spacing: 4px !important;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 1000;
+		opacity: 0;
+	
 	}
 
 		#header h1 {
@@ -3713,6 +3816,7 @@ letter-spacing: 4px !important;
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
 						text-transform: uppercase;
+						
 					}
 
 						#header nav > ul > li > a.menuToggle {
@@ -4022,7 +4126,7 @@ letter-spacing: 4px !important;
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/coderGif.gif");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/coderGif.gif");
 		background-attachment: fixed;
-		background-position: center top;
+		background-position: center center;
 		background-repeat: no-repeat;
 		background-size:cover;
 		text-align: center;
@@ -4176,7 +4280,7 @@ letter-spacing: 4px !important;
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/coderGif.gif");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/coderGif.gif");
 		background-attachment: fixed;
-		background-position: right 30px bottom 0px;
+		background-position: center;
 		background-repeat: repeat;
 		background-size: cover;
 		padding-top: 0;

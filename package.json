@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "jquery-lazyload-any": "^0.3.1",
     "serve": "^11.3.2"
   },
   "scripts": {
